@@ -4,7 +4,7 @@ let flag = "";
 let selectedcountry=""
 function getData(callback, lat,lon,flag) {
     console.log(flag)
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d23a8a0b0a51ed7d6bf6f9a72aa14503`
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=d23a8a0b0a51ed7d6bf6f9a72aa14503`
     fetch(api)
         .then(response => {
             // Check if the response is ok
